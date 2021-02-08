@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Şantiye",
+        "description": "Description One",
+        "image": "/static/images/grid-list/building_site.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Satış",
+        "description": "Description One",
+        "image": "/static/images/grid-list/sales.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Projeler",
+        "description": "Description One",
+        "image": "/static/images/grid-list/projects.png"
+    },
+    {
+        "id": 4,
+        "title": "Arşiv",
+        "description": "Description One",
+        "image": "/static/images/grid-list/archive.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Teslim",
+        "description": "Description One",
+        "image": "/static/images/grid-list/turnkey.png"
+    },
+    {
+        "id": 6,
+        "title": "Personel",
+        "description": "Description One",
+        "image": "/static/images/grid-list/employees.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Takvim",
+        "description": "Description One",
+        "image": "/static/images/grid-list/calendar.jpg"
+    }
+]
