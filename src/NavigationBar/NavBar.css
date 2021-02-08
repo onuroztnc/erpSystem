@@ -23,6 +23,12 @@
     padding: 8px 0px 8px 0px;
 }
 
+.navbar button:hover {
+  /* background: #252831; */
+  background: #632ce4;
+  border-color: var(--primaryLogOutButtonColor);
+}
+
 .menu-bars {
     margin-left: 2rem;
     font-size: 2rem;

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { SideBarData } from './SidebarData'
 import { IconContext } from 'react-icons'
 import './NavBar.css'
+import SubMenu from './SubMenu';
 
 function NavBar({ handleLogout }) {
     const [sidebar, setSidebar] = useState(false)
@@ -25,13 +26,13 @@ function NavBar({ handleLogout }) {
                     </button>
                 </div>
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-                    <ul className='nav-menu-items' onClick={showSidebar}>
+                    <ul className='nav-menu-items' >
                         <li className='navbar-toggle '>
                             <Link to='#' className="menu-bars">
-                                <AiIcons.AiOutlineClose />
+                                <AiIcons.AiOutlineClose onClick={showSidebar} />
                             </Link>
                         </li>
-                        {SideBarData.map((item, index) => {
+                        {/* {SideBarData.map((item, index) => {
                             return (
                                 <li key={index} className={item.cName}>
                                     <Link to={item.path}>
@@ -40,7 +41,11 @@ function NavBar({ handleLogout }) {
                                     </Link>
                                 </li>
                             )
+                        })} */}
+                        {SideBarData.map((item, index) => {
+                            return <SubMenu item={item} key={index} />;
                         })}
+
                     </ul>
                 </nav>
             </IconContext.Provider>

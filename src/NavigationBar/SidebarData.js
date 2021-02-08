@@ -1,5 +1,6 @@
 import React from 'react'
 import * as FaIcons from 'react-icons/fa'
+import * as BiIcons from "react-icons/bi"
 import * as AiIcons from 'react-icons/ai'
 import * as IoIcons from 'react-icons/io'
 import * as GiIcons from "react-icons/gi"
@@ -29,8 +30,22 @@ export const SideBarData = [
     {
         title: 'Projeler',
         path: '/project',
-        icons: <BsIcons.BsBuilding />,
-        cName: 'nav-text'
+        icons: <AiIcons.AiFillFolderOpen />,
+        cName: 'nav-text',
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+            {
+                title: 'Mostar Life',
+                path: '/project/mostar_life',
+                icon: <BsIcons.BsBuilding />
+            },
+            {
+                title: 'Vadi Istanbul',
+                path: '/project/vadi_istanbul',
+                icon: <BsIcons.BsBuilding />
+            }
+        ]
     },
     {
         title: 'Arşiv',
